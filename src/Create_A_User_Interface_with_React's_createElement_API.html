@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "root"></div>
+    <!-- Include the React library -->
+    <script src ="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+    <!-- Include the React DOM library for rendering React component into the DOM-->
+    <script src ="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+    <script type = "text/javascript">
+
+        const rootElement = document.getElementById('root')
+
+        // Creating the React element By using the React.createElement    //This is update of Js For React Js
+        const element = React.createElement('div',{
+            // children:'Let me Create the React App For Facebook',
+            className:'container',
+
+        },
+        '!!Dingg !!Dingg Hello Meta',
+        ', Let me Create the React App For Facebook'
+        )
+
+        console.log(element)
+
+        // Render the React element into the DOM using ReactDOm.render
+        ReactDOM.render(element, rootElement)
+
+        // const element = document.createElement('div')
+        // element.textContent = 'Hello Avimanyu Rimal'
+        // element.className = 'container'
+
+        // rootElement.appendChild(element) //This is the Js.
+
+    </script>
+        
+</body>
